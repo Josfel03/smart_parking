@@ -30,14 +30,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
-  cupertino_icons: ^1.0.2
-  permission_handler: ^11.0.0 # Para permisos de Bluetooth/Cámara en Android 12+
-  
-  # Funcionalidades Core
-  qr_flutter: ^4.1.0            # Para generar el QR
-  mobile_scanner: ^3.4.0        # Para leer el QR
-  flutter_bluetooth_serial: ^0.4.0 # Bluetooth Clásico (HC-05)
+  # Librerías Bluetooth
+  flutter_blue_plus: ^1.34.0       # Para BLE (BT-05, HM-10, AT-09)
+  flutter_bluetooth_serial: ^0.4.0 # Para Clásico (HC-05, HC-06)
+  permission_handler: ^11.0.0
+  mobile_scanner: 4.0.1            # Versión estable sin conflictos de Gradle
+  qr_flutter: ^4.1.0
 
 dev_dependencies:
   flutter_test:
